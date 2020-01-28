@@ -1,0 +1,152 @@
+a{
+  text-decoration: none;
+  color: #fff;
+}
+header{
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+}
+.image_header{
+  display: block;
+  min-height: 740px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background: url(../img/laptop_coffe.webp) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #157efb;
+  /*position: relative;*/
+}
+.logo {
+  display: flex;
+  height: 70px;
+  width: 100px;
+  margin: 5px;
+  position: relative;
+}
+.link_home_page {
+  height: 70px;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.for_php {
+  display: block;
+  height: 64px;
+  width: 64px;
+  font-size: 64px;
+  color: #157efb;
+}
+
+.for_edu {
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+  position: absolute;
+  top: 47px;
+  left: 16px;
+  line-height: 0.9;
+  background: #fff;
+  padding: 5px 9px 7px 7px;
+  line-height: 10px;
+  color: #157efb;
+  border-top: 0 solid #157efb;
+  border-left: 2px solid #157efb;
+  border-right: 2px solid #157efb;
+  border-radius: 25%;
+}
+.list {
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+  max-width: 500px;
+  padding: 0;
+  margin: 0;
+}
+.list > li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 80px;
+}
+.list .block {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.list > li:hover a {
+  border-bottom: 1px solid #000;
+  background: #157efb;
+  border-radius: 5px;
+}
+
+.btn_sign_in a{
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  background: #157efb;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px #000;
+  text-decoration: none;
+}
+.btn_sign_in:focus {
+  box-shadow: 0 0px 0px #000;
+}
+
+/*Animation*/
+.header_fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: #00000048;
+  animation-name: show_header;
+  animation-duration: 1s;
+  z-index: 1;
+}
+@keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+.btn_start_course_header{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  transform: rotate(18deg);
+   display: block;
+  height: 50px;
+  width: 300px;
+  background-color: #777bb3;
+  border-radius: 5px;
+  border: 2px solid #989cc4;
+  text-align: center;
+  box-shadow: 0 -16px 5px -5px #000;
+  line-height: 50px;
+  z-index: 0;
+}

@@ -1,0 +1,127 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+main{
+	width: 100%;
+	background: #0239;
+	min-height: 600px;
+
+}
+.container_tasks{
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background: #fff8;
+	padding: 20px 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-items: top;
+	justify-content: center;
+}
+.question{
+	height: 100px;
+	width: 100px;
+	margin: 20px 10px;
+	text-align: center;
+	border-radius: 5px;
+	position: relative;
+	background: #fff;
+	font-family: Verdana;
+}
+.question:hover{
+	-webkit-box-shadow: 0 2px 6px #000;
+	box-shadow: 0 2px 6px #000;
+}
+.color{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	background-color: green;
+	border-radius: 0 0 5px 5px;
+}
+.question a{
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	z-index: 10;
+	left: 0;
+}
+/*finish*/
+.question_finish .color{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	background-color: green;
+	border-radius: 0 0 5px 5px;
+}
+.question_finish{
+	transition: .5s;
+}
+.question_finish:hover{
+	-webkit-box-shadow: 0 4px 9px #000;
+	box-shadow: 0 4px 9px #000;
+	margin: 8px 10px;
+	transition: .2s;
+}
+
+/*block*/
+.question_block:hover{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.question_block{
+	background: #acacac;
+	color: gray;
+}
+.question_block a{
+	width: 0%;
+	height: 0%;
+}
+.question_block .color{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	background-color: gray;
+	border-radius: 0 0 5px 5px;
+}
+/*working block*/
+.question_work .color{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	background-color: blue;
+	border-radius: 0 0 5px 5px;
+	
+
+}
+.question_work{
+	-webkit-box-shadow: 0 2px 9px #000;
+	box-shadow: 0 2px 9px #000;
+}
+.question_work{
+	transition: .5s;
+}
+.question_work:hover{
+	-webkit-box-shadow: 0 4px 9px #000;
+	box-shadow: 0 4px 20px #000;
+	margin: 8px 10px;
+	transition: .2s;
+}
+.btn_reset{
+	position: absolute;
+	bottom: 0;
+	/*right: 5%;*/
+}

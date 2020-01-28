@@ -1,0 +1,109 @@
+footer{
+  min-height: 100px;
+  width: 100%;
+  background: #0002;
+}
+.footer{
+  text-align: center;
+  color: #23242e;
+  padding: 30px;
+}
+.social_block{
+  max-width: 300px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  font-size: 32px;
+
+}
+.social_block a{
+  color: #777bb3;
+  height: 50px;
+  width: 50px;
+  display: block;
+  line-height: 50px;
+  position: relative;
+
+}
+
+
+
+/*Анимация */
+.social_block li a::before,
+.social_block li a::after{
+  content: "";
+  background-color: #777bb3;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transition: transform .5s;
+  transform: scaleY(0);
+}
+.social_block li a::after{
+  bottom: 0;
+}
+
+
+.social_block li a::before{
+  transform-origin: right;
+}
+.social_block li a:hover::before{
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.social_block li a::after{
+  transform-origin: left;
+}
+.social_block li a:hover::after{
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+
+
+
+
+.social_block li div::before,
+.social_block li div::after{
+  content: "";
+  background-color: #777bb3;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top:0;
+  transition: transform .5s;
+  transform: scaleY(0);
+}
+.social_block li div::before{
+  left: 0;
+}
+.social_block li div::after{
+  right: 0;
+}
+
+
+.social_block li div::before{
+  transform-origin: bottom;
+}
+.social_block li div:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.social_block li div::after{
+  transform-origin: top;
+}
+.social_block li div:hover::after{
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+
+
+
+

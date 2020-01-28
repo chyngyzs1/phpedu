@@ -1,0 +1,103 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/ep_naturalwhite.png);
+}
+
+
+
+/*основной блок===курс обучения*/
+.main_content{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.php_course_home_page{
+  font-family: 'roboto_slabregular';
+  max-width: 350px;
+  min-height: 350px;
+  background-color: rgb(0, 0, 0, 10%);
+  border-radius: 10px;
+  margin: 40px auto;
+}
+.block_describe{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.icon_language{
+  height: 50px;
+  width: 80px;
+  background: url(../img/block_main_iconPHP.svg.png) no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+}
+.block_describe h3{
+  margin: 20px 0 0;
+  font-size: 24px;
+  line-height: 50px;
+}
+.describe_language{
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+}
+.describe_language a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.btn_start_course{
+  display: block;
+  height: 30px;
+  width: 60px;
+  background-color: #777bb3;
+  border-radius: 5px;
+  border: 2px solid #989cc4;
+  text-align: center;
+  box-shadow: 0 6px 5px -5px #000;
+}
+.btn_start_course:focus{
+  box-shadow: 0 0 0;
+}
+.top p{
+  margin: 0;
+  padding: 5px 20px;
+  color: #acacac;
+  
+}
+.container{
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  background: #0004;
+  border: 1px solid #157efb;
+  padding: 20px;
+}
+.container h3{
+  font-family: verdana, sans-serif;
+  color: #157efb;
+}
+.container input{
+  margin: 10px 0;
+  border: 0;
+}
+.container input[type="email"]{
+  height: 30px;
+  width: 100%;
+  background: #fff7;
+}
+.container input[type="textarea"]{
+  height: 100px;
+  width: 100%;
+  background: #fff7;
+}
+.btn-success{
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  background: #157efb;
+  border: 0;
+  -webkit-box-shadow: 0 2px 8px #fff6;
+  box-shadow: 0 2px 8px #fff6;
+  cursor: pointer;
+}

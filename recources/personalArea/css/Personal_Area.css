@@ -1,0 +1,50 @@
+body{
+	background: url(../img/rasch_hessian_plain_texture_natural_white.jpg);
+	background-size: contain;
+}
+main{
+	width: 100%;
+}
+.content_main{
+	max-width: 1000px;
+	min-height: 300px;
+	margin: 0 auto;
+}
+.user_profile{
+	height: 100%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: #0002;
+	margin: 50px 0;
+	border-radius: 10px;
+	padding: 10px;
+}
+.photo_user{
+	height: 150px;
+	width: 150px;
+	/*border: 1px solid #0005;*/
+	border-radius: 50%;
+	/*background: url();*/
+}
+.about_user{
+	font-family: "Times New Roman", Times, Baskerville, Georgia, fantasy;
+	height: 250px;
+	width: 500px;
+	color: #0009;
+	font-size: 20px;
+}
+.about_user h2{
+	font-size: 32px;
+	font-weight: lighter;	
+	text-transform: capitalize;
+	margin: 0;
+	padding: 0 20px;
+}
+.about_user p{
+	margin: 0;
+	padding: 0 20px;
+}

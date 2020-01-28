@@ -1,0 +1,31 @@
+table{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+table,tr,td{
+	border-collapse: collapse;
+	padding: 10px;
+	border: 1px solid #000;
+
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+tr:first-child{
+	background: red;
+	color: #fff;
+}
+.btn-back
+{
+	display: block;
+	background: #cacaca;
+	text-align: center;
+	line-height: 30px;
+}
